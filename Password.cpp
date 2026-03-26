@@ -10,8 +10,12 @@ int main() {
     cout << "Enter your password: ";
     cin >> password;
 
-    if(password.length() >= 8)
-        score++;
+if(password.length() >= 8){
+    score++;
+}
+else{
+    cout << "Warning: Password is too short" << endl;
+}
 
     bool hasUpper = false;
     bool hasLower = false;

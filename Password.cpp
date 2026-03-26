@@ -37,17 +37,16 @@ int main() {
     if(hasLower) score++;
     if(hasDigit) score++;
     if(hasSymbol) score++;
+    cout << "Password Score: " << score << "/5" << endl;
 
-    cout << "Password Strength: ";
+if(score <= 2)
+    cout << "Strength: Weak";
 
-    if(score <= 2)
-        cout << "Weak";
+else if(score <= 4)
+    cout << "Strength: Medium";
 
-    else if(score <= 4)
-        cout << "Medium";
-
-    else
-        cout << "Strong";
+else
+    cout << "Strength: Strong";
 
     return 0;
 }

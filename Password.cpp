@@ -44,13 +44,16 @@ else{
     cout << "Password Score: " << score << "/5" << endl;
 
 if(score <= 2)
+    
     cout << "Strength: Weak";
 
 else if(score <= 4)
+    
     cout << "Strength: Medium";
 
 else
     cout << "Strength: Strong";
+    
 
     return 0;
 }
